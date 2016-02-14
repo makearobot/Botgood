@@ -2,7 +2,7 @@ do
 
 function run(msg, matches)
   return [[
-بات ورژن1
+ورژن ربات مانستر: 1.5
 بات انتی اسپمر و هوشمند تلگرام
 مدیران ربات
 @Mr_Vigeo [sudo]
