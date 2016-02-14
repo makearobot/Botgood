@@ -213,6 +213,7 @@ function create_config( )
     "ingroup",
     "inpm",
     "banhammer",
+    "anti_bot",
     "stats",
     "anti_spam",
     "owners",
@@ -227,8 +228,12 @@ function create_config( )
     "calc",
     "webshot",
     "monster",
+    "tex2i",
+    "sticker_lock",
     "lockeng",
     "time",
+    "imgtosticker"و
+    "share",
     "inviter",
     "addme",
     "hello",
@@ -358,6 +363,15 @@ function create_config( )
 !modlist
 لیست مدیران گروه
 
+!sticker warn
+فردی که استیکر ارسال کند ابتدا اخطار میگیرد وقتی تکرار کند کیک میشود
+
+!sticker kick
+فردی که استیکر ارسال کند کیک میشود
+
+!sticker ok
+غیرفعال کردن استیکر ممنوع
+
 !promote [ایدی فرد و یا ریپلی پیام او]
 اضافه کردن مدیری به گروه
 
@@ -366,6 +380,12 @@ function create_config( )
 
 !kickme
 خروج از گروه
+
+!bot +
+فعال شدن ضدربات
+
+!bot -
+غیرفعال شدن ضدربات
 
 !about
 درباره گروه
