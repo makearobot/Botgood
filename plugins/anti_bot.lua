@@ -120,5 +120,5 @@ return {
     '^!!tgservice (chat_add_user_link)$'
   },
   run = run
-     moderated = true
+     moderation = true
 }
