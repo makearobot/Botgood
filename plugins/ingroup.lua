@@ -1183,7 +1183,7 @@ local function run(msg, matches)
       end
       local group_link = data[tostring(msg.to.id)]['settings']['set_link']
       if not group_link then 
-        return "لطفا ابتدا با دستور\n"!newlink"\nلینکی جدید بسازید"
+        return "لطفا ابتدا با دستور\nNewlink\nلینکی جدید بسازید"
       end
        savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested group link ["..group_link.."]")
       return "Group link:\n"..group_link
