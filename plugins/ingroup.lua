@@ -216,7 +216,7 @@ local function show_group_settingsmod(msg, data, target)
     	leave_ban = data[tostring(msg.to.id)]['settings']['leave_ban']
    	end
   local settings = data[tostring(target)]['settings']
-  local text = "تنظیمات گروه:\nقفل بودن ورود به گروه : "..settings.lock_join.."\nقفل بودن تگ کردن : "..settings.antitag.."\nقفل بودن لینک گروه : "..settings.antilink.."\nقفل بودن نام گروه : "..settings.lock_name.."\nقفل بودن عکس گروه : "..settings.lock_photo.."\nقفل بودن اعضای گروه : "..settings.lock_member.."\nقفل بودن خارج شدن از گروه : "..leave_ban.."\nمقدار اسپم : "..NUM_MSG_MAX.."\nبات میتواند وارد شود : "..bots_protection"\nپابلیک است: "..public"
+  local text = "Group settings:\nLock group name : "..settings.lock_name.."\nLock group photo : "..settings.lock_photo.."\nLock group member : "..settings.lock_member.."\nLock group leave : "..leave_ban.."\nflood sensitivity : "..NUM_MSG_MAX.."\nBot protection : "..bots_protection--"\nPublic: "..public
   return text
 end
 
