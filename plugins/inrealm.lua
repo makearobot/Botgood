@@ -7,7 +7,7 @@ local function create_group(msg)
         if is_sudo(msg) or is_realm(msg) and is_admin(msg) then
                 local group_creator = msg.from.print_name
                 create_group_chat (group_creator, group_name, ok_cb, false)
-                return 'Group [ '..string.gsub(group_name, '_', ' ')..' ] has been created.'
+                return 'گروهی با نام [ '..string.gsub(group_name, '_', ' ')..' ] ساخته شد'
         end
 end
 
@@ -16,7 +16,7 @@ local function create_realm(msg)
         if is_sudo(msg) or is_realm(msg) and is_admin(msg) then
                 local group_creator = msg.from.print_name
                 create_group_chat (group_creator, group_name, ok_cb, false)
-                return 'Realm [ '..string.gsub(group_name, '_', ' ')..' ] has been created.'
+                return 'مقر فرماندهی با نام [ '..string.gsub(group_name, '_', ' ')..' ] ساخته شد'
         end
 end
 
@@ -78,7 +78,7 @@ local function set_rules(msg, data, target)
     local data_cat = 'rules'
         data[tostring(target)][data_cat] = rules
         save_data(_config.moderation.data, data)
-        return 'Set group rules to:\n'..rules
+        return 'قوانین گروه:\n'..rules
 end
 -- lock/unlock group name. bot automatically change group name when locked
 local function lock_group_name(msg, data, target)
