@@ -216,7 +216,7 @@ local function show_group_settingsmod(msg, data, target)
     	leave_ban = data[tostring(msg.to.id)]['settings']['leave_ban']
    	end
   local settings = data[tostring(target)]['settings']
-  local text = "Group settings:\nLock group name : "..settings.lock_name.."\nLock group photo : "..settings.lock_photo.."\nLock group member : "..settings.lock_member.."\nLock group leave : "..leave_ban.."\nflood sensitivity : "..NUM_MSG_MAX.."\nBot protection : "..bots_protection--"\nPublic: "..public
+  local text = "تنظیمات گروه:\nنام گروه قفل است : "..settings.lock_name.."\nعکس گروه قفل است : "..settings.lock_photo.."\nاعضا گروه قفل است : "..settings.lock_member.."\nخروج از گروه قفل است : "..leave_ban.."\nمقدار فلود : "..NUM_MSG_MAX.."\nضد بات فعال است : "..bots_protection--"\nPublic: "..public
   return text
 end
 
@@ -592,7 +592,7 @@ local function get_rules(msg, data)
     return 'قانونی وجود ندارد'
   end
   local rules = data[tostring(msg.to.id)][data_cat]
-  local rules = 'قوانین گروه " ..string.gsub(msg.to.print_name, "_", " ").. ":\n'..rules
+  local rules = 'قوانین گروه ":\n'..rules
   return rules
 end
 
@@ -707,7 +707,7 @@ local function modlist(msg)
   end
   -- determine if table is empty
   if next(data[tostring(msg.to.id)]['moderators']) == nil then --fix way
-    return 'مدیری در " ..string.gsub(msg.to.print_name, "_", " ").. " \nوجود ندارد'
+    return 'مدیری در گروه " " \nوجود ندارد'
   end
   local i = 1
   local message = '\nList of moderators for ' .. string.gsub(msg.to.print_name, '_', ' ') .. ':\n'
@@ -1197,7 +1197,7 @@ local function run(msg, matches)
         return "لطفا ابتدا با دستور\n"!newlink"\nلینکی جدید بسازید"
       end
        savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested group link ["..group_link.."]")
-     send_large_msg('user#id'..msg.from.id, "لینک گروه " ..string.gsub(msg.to.print_name, "_", " ").. ":\n"..group_link)
+     send_large_msg('user#id'..msg.from.id, "لینک گروه :\n"..group_link)
     end
     if matches[1] == 'setowner' and matches[2] then
       if not is_owner(msg) then
