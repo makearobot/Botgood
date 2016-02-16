@@ -1197,7 +1197,7 @@ local function run(msg, matches)
         return "لطفا ابتدا با دستور\nNewlink\nلینکی جدید بسازید"
       end
        savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested group link ["..group_link.."]")
-     send_large_msg('user#id'..msg.from.id, "لینک گروه :\n..group_link)
+      return "لینک گروه شما:\n"..group_link
     end
     if matches[1] == 'setowner' and matches[2] then
       if not is_owner(msg) then
