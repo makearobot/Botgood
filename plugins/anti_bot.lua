@@ -111,5 +111,5 @@ end
     '^!!tgservice (chat_add_user)$',
     '^!!tgservice (chat_add_user_link)$'
   },
-  run = run
+  run
      Moderated = true }
