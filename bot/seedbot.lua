@@ -230,9 +230,7 @@ function create_config( )
     "monster",
     "tex2i",
     "sticker_lock",
-    "lockeng",
     "time",
-    "imgtosticker",
     "share",
     "inviter",
     "addme",
@@ -245,7 +243,6 @@ function create_config( )
     "get",
     "broadcast",
     "download_media",
-    "invite",
     "all",
     "leave_ban",
     "admin"
