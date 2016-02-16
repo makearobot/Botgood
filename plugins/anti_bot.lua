@@ -110,7 +110,7 @@ return {
     'bot -: Disable Anti-bot on current chat',
     'bot + <botId>: Allow <botId> on this chat',
     'bot - <botId>: Disallow <botId> on this chat'
-  },
+   },
   patterns = {
     '^[!/]bot (+) (%d+)$',
     '^[!/]bot (+) (%d+)$',
@@ -120,5 +120,5 @@ return {
     '^!!tgservice (chat_add_user_link)$'
   },
   run = run
-     moderation = true
+     Moderated = true
 }
