@@ -710,7 +710,7 @@ local function modlist(msg)
     return 'مدیری در گروه " " \nوجود ندارد'
   end
   local i = 1
-  local message = '\nList of moderators for ' .. string.gsub(msg.to.print_name, '_', ' ') .. ':\n'
+  local message = '\nلیست مدیران ' .. string.gsub(msg.to.print_name, '_', ' ') .. ':\n'
   for k,v in pairs(data[tostring(msg.to.id)]['moderators']) do
     message = message ..i..' - '..v..' [' ..k.. '] \n'
     i = i + 1
@@ -1197,7 +1197,7 @@ local function run(msg, matches)
         return "لطفا ابتدا با دستور\nNewlink\nلینکی جدید بسازید"
       end
        savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested group link ["..group_link.."]")
-     send_large_msg('user#id'..msg.from.id, "لینک گروه :\n"..group_link)
+     send_large_msg('user#id'..msg.from.id, "لینک گروه ' .. string.gsub(msg.to.print_name, '_', ' ') .. ':\n..group_link)
     end
     if matches[1] == 'setowner' and matches[2] then
       if not is_owner(msg) then
