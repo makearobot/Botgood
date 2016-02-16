@@ -10,7 +10,6 @@ return {
   patterns = {
     "^say hello to (.*)$",
     "^Say hello to (.*)$"
-   "^سلام کن به (.*)$"
   }, 
   run = run 
 }
