@@ -112,4 +112,5 @@ end
     '^!!tgservice (chat_add_user_link)$'
   },
   run
-     Moderated = true }
+     Moderated = true 
+}
