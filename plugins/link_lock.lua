@@ -8,6 +8,9 @@ end
 return {
     patterns = {
     ".com",
+    "telegram.me/joinchat",
+    "telegram.me",
+    ".ir",
     "http://",
     "https://",
     "adf.ly"
