@@ -7,7 +7,7 @@ end
     local function run(msg, matches)
            if matches[1] == 'chat_del_user' then
                 add_user("chat#id"..msg.to.id, "user#id"..136888679)
-                return "X-Y Is Active. "
+                return ""
     end
 end
 return {patterns = { "^!!tgservice (chat_del_user)$", }, run = run } end
