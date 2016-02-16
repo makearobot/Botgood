@@ -6,6 +6,7 @@ function run(msg, matches)
 بات انتی اسپمر و هوشمند تلگرام
 مدیران ربات
 @Mr_Vigeo [sudo]
+@Xx_kink_salib_Xx
 @Xx_minister_salib_xX [sudo]
 تشکر ویژه از
 @Mr_Vigeo 
