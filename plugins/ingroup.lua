@@ -1220,7 +1220,7 @@ local function run(msg, matches)
     if matches[1] == 'owner' then
       local group_owner = data[tostring(msg.to.id)]['set_owner']
       if not group_owner then 
-        return "مدیری وجود ندارد از دستور\n"addadmin"\nاستفاده کنید"
+        return "مدیری وجود ندارد از دستور\nAddadmin\nاستفاده کنید"
       end
       savelog(msg.to.id, name_log.." ["..msg.from.id.."] used /owner")
       return "Group owner is ["..group_owner..']'
