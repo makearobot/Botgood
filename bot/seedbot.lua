@@ -217,6 +217,7 @@ function create_config( )
     "stats",
     "anti_spam",
     "owners",
+    "loca",
     "arabic_lock",
     "say",
     "Feedback",
@@ -383,6 +384,9 @@ function create_config( )
 
 !bot -
 غیرفعال شدن ضدربات
+
+!loc [نام منطقه]
+گرفتن اطلاعات درباره منطقه ای
 
 !about
 درباره گروه
