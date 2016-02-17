@@ -221,6 +221,12 @@ function create_config( )
     "arabic_lock",
     "say",
     "Feedback",
+    "addplugins",
+    "botph",
+    "chatbot",
+    "doctionary",
+    "expire",
+    "support",
     "sendplug",
     "linkpv",
     "infoen",
@@ -295,6 +301,9 @@ function create_config( )
 
 !plugins * 
 ریفرش کردن تمامی پلاگین ها
+
+!addplug [اطلاعات][نام و فرمت]
+اضافه کردن پلاگینی به ربات
 
 !wholist
 لیست اعضای مقر و یا گروه
@@ -387,6 +396,15 @@ function create_config( )
 
 !loc [نام منطقه]
 گرفتن اطلاعات درباره منطقه ای
+
+!support
+ورود به گروه پشتیبانی
+
+!dic [متن]
+ترجمه متن شما از انگلیسی به فارسی
+
+!dic [زبان مورد نظر][متن]
+ترجمه متن شما به زبان دلخواهتون
 
 !about
 درباره گروه
