@@ -2,16 +2,12 @@ do
 
 function run(msg, matches)
   return [[
-ورژن ربات مانستر: 1.5
+ورژن ربات 1
 بات انتی اسپمر و هوشمند تلگرام
-مدیران ربات
-@Mr_Vigeo [sudo]
-@Xx_kink_salib_Xx
-@Xx_minister_salib_xX [sudo]
-تشکر ویژه از
+سازنده و صاحب ربات
 @Mr_Vigeo 
-چنل ما
-@pluginlua [persian]
+درخواست گروه با قیمت مناسب
+@pvmrvigeobot
   ]]
 
   end
@@ -19,7 +15,7 @@ return {
   description = "shows sudoers", 
   usage = "!sudoers : return sudousers",
   patterns = {
-    "^[mM]onster$",
+    "^[Ss]hadow$",
 
   },
   run = run
