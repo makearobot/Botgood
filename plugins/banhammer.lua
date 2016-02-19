@@ -128,7 +128,7 @@ local function run(msg, matches)
       local name = user_print_name(msg.from)
         savelog(msg.to.id, name.." ["..msg.from.id.."] used /id ")
         id = get_message(msg.reply_id,get_message_callback_id, false)
-    elseif matches[1]:lower() == 'ایدی' then
+    elseif matches[1]:lower() == 'id' then
       local name = user_print_name(msg.from)
       savelog(msg.to.id, name.." ["..msg.from.id.."] used /id ")
       return "ایدی گروه " ..string.gsub(msg.to.print_name, "_", " ").. ":\n\n"..msg.to.id  
@@ -313,16 +313,16 @@ return {
     "^[!/]([Bb]anlist) (.*)$",
     "^[!/]([Bb]anlist)$",
     "^[!/]([Gg]banlist)$",
-    "^(بن) (.*)$",
-    "^(کیک)$",
-    "^(انبن) (.*)$",
+    "^(ban) (.*)$",
+    "^(kick)$",
+    "^(unban) (.*)$",
     "^[!/]([Uu]nbanall) (.*)$",
     "^[!/]([Uu]nbanall)$",
-    "^(کیک) (.*)$",
+    "^(kick) (.*)$",
     "^[!/]([Kk]ickme)$",
-    "^(بن)$",
+    "^(ban)$",
     "^[!/]([Uu]nban)$",
-    "^(ایدی)$",
+    "^(id)$",
     "^!!tgservice (.+)$"
   },
   run = run,
