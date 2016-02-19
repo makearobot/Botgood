@@ -128,7 +128,7 @@ local function run(msg, matches)
       local name = user_print_name(msg.from)
         savelog(msg.to.id, name.." ["..msg.from.id.."] used /id ")
         id = get_message(msg.reply_id,get_message_callback_id, false)
-    elseif matches[1]:lower() == 'id' then
+    elseif matches[1]:lower() == 'ایدی' then
       local name = user_print_name(msg.from)
       savelog(msg.to.id, name.." ["..msg.from.id.."] used /id ")
       return "ایدی گروه " ..string.gsub(msg.to.print_name, "_", " ").. ":\n\n"..msg.to.id  
