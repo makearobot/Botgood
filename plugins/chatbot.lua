@@ -9,7 +9,7 @@ end
 if msg.text == "umbrella" then
 	return "کیرم توش"
 end
-if msg.text == "مانستر" then
+if msg.text == "سایه" then
 	return "بله؟"
 end
 if msg.text == "اسپم" then
@@ -84,7 +84,7 @@ return {
 		"^Xy$",
 		"^XY$",
 		"^?$",
-		"^مانستر$"
+		"^سایه$"
 		}, 
 	run = run,
     --privileged = true,
