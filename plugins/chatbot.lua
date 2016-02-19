@@ -1,7 +1,7 @@
 
 local function run(msg)
-if msg.text == "امیر" then
-	return "بگو عموم میشنوه"
+if msg.text == "پلاگین" then
+	return "اگه پلاگین میخوای بیا @Mr_Vigeo"
 end
 if msg.text == "Umbrella" then
 	return "کیرم توش"
@@ -21,8 +21,8 @@ end
 if msg.text == "میکایئل" then
 	return "بگو بابام میشنوه"	
 end
-if msg.text == "علی" then
-	return "بگو داییم میشنوه"	
+if msg.text == "سلام" then
+	return "سلوم♥"	
 end
 if msg.text == "ایکس ایگرگ" then
 	return "ایکس ایگرگو همرا ننت گاییدم ابمم ریختم روش"	
@@ -66,7 +66,7 @@ return {
 	description = "Chat With Robot Server", 
 	usage = "chat with robot",
 	patterns = {
-		"^امیر$",
+		"^پلاگین$",
 		"^[Bb]ot$",
 		"^[Uu]mbrella$",
 		"^بای$",
@@ -77,7 +77,7 @@ return {
 		"^اسپم$",
 		"^زتا$",
 		"^میکایئل$",
-		"^علی$",
+		"^سلام$",
 		"^spam$",
 		"^start$",
 		"^بای$",
