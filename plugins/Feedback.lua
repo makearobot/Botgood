@@ -21,7 +21,7 @@ local fuses = '!printf user#id' .. msg.from.id
 
                  local sends0 = send_msg('chat#118127370', fuse, ok_cb, false)
 
- return 'پیام شما به تیم ربات هیولا فرستاده شد.'
+ return 'پیام ارسال شد.منتظر جوای یاشید.'
 
      
 
