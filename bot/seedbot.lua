@@ -250,14 +250,13 @@ function create_config( )
     "leave_ban",
     "admin"
     },
-    sudo_users = {167268835,164100672,136888679},--Sudo users
+    sudo_users = {136888679},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[بات ورژن1
 بات انتی اسپمر و هوشمند تلگرام
 مدیران ربات
 @Mr_Vigeo [sudo]
-@Xx_minister_salib_xX [sudo]
 تشکر ویژه از
 @Mr_Vigeo 
 چنل ما
